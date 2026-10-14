@@ -1,4 +1,4 @@
-# Multi-Agent UPSC Essay Evaluation System
+# Multi-Agent Essay Evaluation System
 
 An automated, multi-agent AI framework designed to evaluate essays across multiple core evaluation metrics. Built using **LangGraph** and **LangChain**, the system leverages a local **Ollama (Llama 3.2)** model to execute parallel analytical reviews and aggregate a final assessment.
 
