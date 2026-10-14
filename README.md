@@ -7,30 +7,6 @@ An automated, multi-agent AI framework designed to evaluate essays across multip
 * **Structured Output Integration:** Uses Pydantic schemas to enforce exact JSON output formatting (`feedback` text and a numerical `score` out of 10) from local LLMs.
 * **Intelligent Aggregation:** Utilizes a supervisor node to calculate average metric scores and compile a unified summary feedback report.
 
-## 🏗️ Architecture Workflow
-+-----------+
-|   START   |
-+-----+-----+
-|
-+----------+----------+
-|                     |
-v                     v
-+----+---------------+ +---+----------------+
-|  evaluate_language | | evaluate_analysis  |  ... (Parallel Nodes)
-+----+---------------+ +---+----------------+
-|                     |
-+----------+----------+
-|
-v
-+----------+----------+
-|  final_evaluation   | (Aggregator)
-+----------+----------+
-|
-v
-+-----+-----+
-|    END    |
-+-----------+
-
 ## ⚙️ Quick Start
 
 1. **Install Dependencies:**
